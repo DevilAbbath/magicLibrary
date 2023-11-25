@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Loans</h1>
+<%if user_signed_in? %>
+  <%= link_to "Request a Book", new_loan_path, class:"btn btn-outline-secondary"  %>
+
+  <div id="loans">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Loan Date</th>
+          <th scope="col">Return Date</th>
+          <th scope="col">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @loans.each do |loan| %>
+          <%= render 'loans/loantable', loan: loan %>
+        <% end %>      
+      </tbody>
+    </table>
+  </div>
+
+<% else %>
+  <h2>You must be logged in to see this feature</h2>
+  <%= link_to "Back Home", root_path, class:"btn btn-outline-primary" %>
+<% end %>

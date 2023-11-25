@@ -1,0 +1,13 @@
+<tr>
+  <th scope="row"><%= loan.id %></th>
+  <td><%= loan.book.title %></td>
+  <td><%= loan.book.author %></td>
+  <td><%= loan.loanDate %></td>
+  <td><%= loan.returnDate %></td>
+  <td>
+    <%= link_to "See Details", loan %>
+    <%if current_user.kindUser == 1 %>
+      <%= link_to "Delete", loanclass:"btn btn-danger" %>
+    <% end  %>
+  </td>
+</tr>

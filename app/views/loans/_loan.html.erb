@@ -1,0 +1,39 @@
+<div id="<%= dom_id loan %>">
+  <p>
+    <strong>Title:</strong>
+    <%= loan.book.title %>
+  </p>
+  <p>
+    <strong>Author:</strong>
+    <%= loan.book.author %>
+  </p>
+  <p>
+    <strong>Publisher:</strong>
+    <%= loan.book.publisher %>
+  </p>
+  <p>
+    <strong>Genre:</strong>
+    <%= loan.book.genre %>
+  </p>
+  <p>
+    <strong>Published:</strong>
+    <%= loan.book.published %>
+  
+  </p>
+  <p>
+    <strong>Published:</strong>
+    <%= loan.book.synopsis %>
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Requested On:</strong>
+    <%= loan.loanDate %>
+  </p>
+  <p>
+    <strong>Returned On:</strong>
+    <%= loan.returnDate %>
+  </p>
+
+</div>

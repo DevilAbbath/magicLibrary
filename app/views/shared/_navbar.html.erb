@@ -1,0 +1,23 @@
+<div class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <%= link_to "MagicBooks", root_path, class: "nav-link px-2 text-white" %>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><%= link_to "Books", books_path, class: "nav-link px-2 text-secondary" %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Loans", loans_path, class: "nav-link px-2 text-secondary" %></li>
+        <% end %>
+      </ul>
+
+      <div class="text-end">
+        <% if user_signed_in? %>
+          <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-warning" %>
+        <% else %>
+          <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-light me-2" %>
+          <%= link_to "Registrarse", new_user_registration_path, class: "btn btn-warning" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

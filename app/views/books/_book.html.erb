@@ -1,0 +1,29 @@
+<div id="<%= dom_id book %>" class="card">
+  <div class="card-body">
+    <h5 class="card-title"><%= book.title %></h5>
+    <% if book.state_id == 1 %>
+      <h6 class="mb-2 btn btn-success btn-sm"><%= book.state.state %></h6>
+    <% elsif book.state_id == 2 %>
+      <h6 class="mb-2 btn btn-danger btn-sm"><%= book.state.state %></h6>
+    <% else %>
+      <h6 class="card-subtitle mb-2 text-body-secondary"><%= book.state.state %></h6>
+    <% end %>
+    <p>
+      <strong>Author:</strong>
+      <%= book.author %>
+    </p>
+    <p>
+      <strong>Publisher:</strong>
+      <%= book.publisher %>
+    </p>
+    <p>
+      <strong>Genre:</strong>
+      <%= book.genre %>
+    </p>
+    <p>
+      <strong>Published:</strong>
+      <%= book.published %>
+    </p>
+    <p class="card-text"><strong>Synopsis: </strong><%= truncate(book.synopsis, length: 220) %></p>
+  </div>
+</div>
