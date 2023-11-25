@@ -68,13 +68,13 @@ Use [Git](https://git-scm.com) para el versionado.
 
 Diagrama de flujo
 
-!(/public/diagram.png)
+![Texto alternativo](/public/diagram.png)
 
 Modelo Fisico
 
-!(/public/concept1.png)
-!(/public/concept2.png)
-!(/public/concept3.png)
-!(/public/concept4.png)
-!(/public/concept5.png)
-!(/public/concept6.png)
+![Texto alternativo](/public/concept1.png)
+![Texto alternativo](/public/concept2.png)
+![Texto alternativo](/public/concept3.png)
+![Texto alternativo](/public/concept4.png)
+![Texto alternativo](/public/concept5.png)
+![Texto alternativo](/public/concept6.png)
