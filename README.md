@@ -20,7 +20,11 @@ Estas instrucciones te guiarán para obtener una copia de este proyecto en funci
 
 ### Instalación 🔧
 
-Descomprimir proyecto ya sea con winrar o winzip
+Descomprimir proyecto ya sea con winrar o winzip o Clona el repositorio con el siguiente comando:
+
+```bash
+git clone https://github.com/DevilAbbath/magicLibrary
+```
 
 En la terminal, accede a la carpeta donde se encuentra el repositorio y ejecuta (recuerda que para que esto funcione, debes tener instalado Ruby y la gema bundle):
 
